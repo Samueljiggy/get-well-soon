@@ -1,0 +1,114 @@
+/* Reset & Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for centering the card */
+.container {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Card Styles */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+
+/* Spin Animation */
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+.spin {
+  animation: spin 1s ease-in-out;
+}
+
+/* Header */
+header h1 {
+  font-size: 1.8rem;
+  color: #d9534f;
+  margin-bottom: 15px;
+}
+
+/* Message Section */
+.message p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Music Section */
+.music h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Interactive Section */
+.interactive {
+  margin-top: 25px;
+}
+
+.interactive button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #5cb85c;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.interactive button:hover {
+  background: #4cae4c;
+}
+
+/* GIF Container */
+#gif-container {
+  margin-top: 20px;
+}
+
+#gif-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Hide element by default */
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .message p, .music h2, .interactive button {
+    font-size: 1rem;
+  }
+}
